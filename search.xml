@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>测试文章</title>
-    <url>/2024/01/09/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h1 id="博客建立"><a href="#博客建立" class="headerlink" title="博客建立"></a>博客建立</h1>]]></content>
-      <tags>
-        <tag>博客建立</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>测试文章三</title>
-    <url>/2024/01/09/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%E4%B8%89/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>测试文章二</title>
-    <url>/2024/01/09/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%E4%BA%8C/</url>
-    <content><![CDATA[]]></content>
+    <title>V8技能树</title>
+    <url>/2024/01/10/V8%E6%8A%80%E8%83%BD%E6%A0%91/</url>
+    <content><![CDATA[<h1 id="技能数"><a href="#技能数" class="headerlink" title="技能数"></a>技能数</h1><h1 id="什么是-V8"><a href="#什么是-V8" class="headerlink" title="什么是 V8?"></a>什么是 V8?</h1><p>V8 是 JavaScript 虚拟机的一种。<img src="/.com//huawei/hexo-blog/source/_posts/img.png" alt="img"></p>
+]]></content>
   </entry>
 </search>
