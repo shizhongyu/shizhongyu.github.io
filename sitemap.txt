@@ -1,4 +1,6 @@
+http://example.com/2024/01/10/2024-01%E6%97%A5%E8%AE%B0/
 http://example.com/2024/01/10/%E4%BA%86%E8%A7%A3V8/
 http://example.com/categories/index.html
 http://example.com/tags/index.html
 http://example.com/
+http://example.com/tags/private/
