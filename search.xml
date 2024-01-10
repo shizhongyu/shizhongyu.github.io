@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2024.01日记</title>
+    <url>/2024/01/10/2024-01%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">
+  <script id="hbeData" type="hbeData" data-hmacdigest="a17c6290aaf84c2873f03e0a91a7384b19c86b06251fb63adf914e4877807481">10d79030e8222445804370796b90fca14eed5c9e992714f29f65ff4581ae0e91d7473b8a6991d229295af14f658b6a7b3c5bb1a572c0bfe0f8e31be51809b27c122c7ddc8cacdd9b0c59299381bf7cdde34530fcab8f92329438fd141ca9753800dbd418d41b20a4abdfd123eb541a61bf0133e1f0ff52088e794c83b89083348f0b1ee6ca71341cd6f4ebe5ac5011311b22608085ee5251c04a571c9cfe0932cef1258ddc87d96fd1eb51d2a17adf8436a47e25b914741de4793c663143f1202dadf476b4f0fc09b95fa2a11ea456cc9a46e5692a6cdf62af987fbfbbe0aa1a32638b7b2f19d8010fa634465bd4b989</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">当前文章暂不对外可见，请输入密码后查看！</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <tags>
+        <tag>private</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>V8技能树</title>
     <url>/2024/01/10/%E4%BA%86%E8%A7%A3V8/</url>
     <content><![CDATA[<h1 id="什么是-V8"><a href="#什么是-V8" class="headerlink" title="什么是 V8?"></a>什么是 V8?</h1><p>V8 是 JavaScript 虚拟机的一种。将人类能够理解的编程语言 JavaScript，翻译成机器能够理解的机器语言。</p>
@@ -19,24 +38,5 @@
 <p>要想充分了解 V8 是怎么工作的，除了要分析编译流水线，我们还需要了解另外两个非常重要的特性，那就是事件循环系统和垃圾回收机制。</p>
 <h1 id="技能树"><a href="#技能树" class="headerlink" title="技能树"></a>技能树</h1><p><img src="/../images/%E4%B8%8B%E8%BD%BD%20(2).jpeg" alt="下载 (2).jpeg"></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>2024.01日记</title>
-    <url>/2024/01/10/2024-01%E6%97%A5%E8%AE%B0/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">
-  <script id="hbeData" type="hbeData" data-hmacdigest="a17c6290aaf84c2873f03e0a91a7384b19c86b06251fb63adf914e4877807481">10d79030e8222445804370796b90fca14eed5c9e992714f29f65ff4581ae0e91d7473b8a6991d229295af14f658b6a7b3c5bb1a572c0bfe0f8e31be51809b27c122c7ddc8cacdd9b0c59299381bf7cdde34530fcab8f92329438fd141ca9753800dbd418d41b20a4abdfd123eb541a61bf0133e1f0ff52088e794c83b89083348f0b1ee6ca71341cd6f4ebe5ac5011311b22608085ee5251c04a571c9cfe0932cef1258ddc87d96fd1eb51d2a17adf8436a47e25b914741de4793c663143f1202dadf476b4f0fc09b95fa2a11ea456cc9a46e5692a6cdf62af987fbfbbe0aa1a32638b7b2f19d8010fa634465bd4b989</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">当前文章暂不对外可见，请输入密码后查看！</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <tags>
-        <tag>private</tag>
-      </tags>
   </entry>
 </search>
