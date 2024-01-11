@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://example.com/2024/01/10/2024-01%E6%97%A5%E8%AE%B0/</loc>
-    <lastmod>2024-01-10</lastmod>
+    <loc>http://example.com/2024/01/11/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/</loc>
+    <lastmod>2024-01-11</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2024/01/11/%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84/</loc>
+    <lastmod>2024-01-11</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2024/01/11/API%E5%AE%89%E5%85%A8%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2024-01-11</lastmod>
   </url>
   <url>
     <loc>http://example.com/2024/01/10/%E4%BA%86%E8%A7%A3V8/</loc>
+    <lastmod>2024-01-11</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2024/01/10/2024-01%E6%97%A5%E8%AE%B0/</loc>
     <lastmod>2024-01-10</lastmod>
   </url>
 </urlset> 

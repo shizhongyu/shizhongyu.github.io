@@ -19,28 +19,32 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="这是一篇加密文章，需要密码才能继续阅读。">
+    <meta name="description" content="API 安全的 12 个技巧 OAuth2.0应用场景为了理解OAuth的适用场合，让我举一个假设的例子。 有一个”云冲印”的网站，可以将用户储存在Google的照片，冲印出来。用户为了使用该服务，必须让”云冲印”读取自己储存在Google上的照片。 云冲印 问题是只有得到用户的授权，Google才会同意”云冲印”读取这些照片。那么，”云冲印”怎样获得用户的授权呢？ 传统方法是，用户将自己的Goo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2024.01日记">
-<meta property="og:url" content="http://example.com/2024/01/10/2024-01%E6%97%A5%E8%AE%B0/index.html">
+<meta property="og:title" content="API安全技巧">
+<meta property="og:url" content="http://example.com/2024/01/11/API%E5%AE%89%E5%85%A8%E6%8A%80%E5%B7%A7/index.html">
 <meta property="og:site_name" content="海纳百川">
-<meta property="og:description" content="这是一篇加密文章，需要密码才能继续阅读。">
+<meta property="og:description" content="API 安全的 12 个技巧 OAuth2.0应用场景为了理解OAuth的适用场合，让我举一个假设的例子。 有一个”云冲印”的网站，可以将用户储存在Google的照片，冲印出来。用户为了使用该服务，必须让”云冲印”读取自己储存在Google上的照片。 云冲印 问题是只有得到用户的授权，Google才会同意”云冲印”读取这些照片。那么，”云冲印”怎样获得用户的授权呢？ 传统方法是，用户将自己的Goo">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-01-10T09:40:25.000Z">
-<meta property="article:modified_time" content="2024-01-10T11:11:02.663Z">
+<meta property="og:image" content="http://example.com/images/45d16bfb-c541-4c01-8574-63cc39a5c560_1280x1664.webp">
+<meta property="og:image" content="http://example.com/images/bg2014051202.png">
+<meta property="og:image" content="http://example.com/images/v2-fccac16d440911894f2ff356064563e9_1440w.webp">
+<meta property="article:published_time" content="2024-01-11T03:35:15.000Z">
+<meta property="article:modified_time" content="2024-01-11T03:53:48.070Z">
 <meta property="article:author" content="microli">
-<meta property="article:tag" content="private">
+<meta property="article:tag" content="JAVA, TS, 安卓">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/45d16bfb-c541-4c01-8574-63cc39a5c560_1280x1664.webp">
 
 
-<link rel="canonical" href="http://example.com/2024/01/10/2024-01%E6%97%A5%E8%AE%B0/">
+<link rel="canonical" href="http://example.com/2024/01/11/API%E5%AE%89%E5%85%A8%E6%8A%80%E5%B7%A7/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2024/01/10/2024-01%E6%97%A5%E8%AE%B0/","path":"2024/01/10/2024-01日记/","title":"2024.01日记"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2024/01/11/API%E5%AE%89%E5%85%A8%E6%8A%80%E5%B7%A7/","path":"2024/01/11/API安全技巧/","title":"API安全技巧"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>2024.01日记 | 海纳百川</title>
+<title>API安全技巧 | 海纳百川</title>
   
 
 
@@ -126,7 +130,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -139,6 +143,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#API-%E5%AE%89%E5%85%A8%E7%9A%84-12-%E4%B8%AA%E6%8A%80%E5%B7%A7"><span class="nav-number">1.</span> <span class="nav-text">API 安全的 12 个技巧</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#OAuth2-0"><span class="nav-number">2.</span> <span class="nav-text">OAuth2.0</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">2.1.</span> <span class="nav-text">应用场景</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%EF%BC%9A"><span class="nav-number">3.</span> <span class="nav-text">参考：</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -191,7 +196,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/01/10/2024-01%E6%97%A5%E8%AE%B0/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/01/11/API%E5%AE%89%E5%85%A8%E6%8A%80%E5%B7%A7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/GW.webp">
@@ -204,12 +209,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="2024.01日记 | 海纳百川">
+      <meta itemprop="name" content="API安全技巧 | 海纳百川">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          2024.01日记
+          API安全技巧
         </h1>
 
         <div class="post-meta-container">
@@ -221,7 +226,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2024-01-10 17:40:25 / 修改时间：19:11:02" itemprop="dateCreated datePublished" datetime="2024-01-10T17:40:25+08:00">2024-01-10</time>
+      <time title="创建时间：2024-01-11 11:35:15 / 修改时间：11:53:48" itemprop="dateCreated datePublished" datetime="2024-01-11T11:35:15+08:00">2024-01-11</time>
     </span>
 
   
@@ -238,14 +243,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>65</span>
+      <span>524</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
+      <span>2 分钟</span>
     </span>
 </div>
 
@@ -255,18 +260,19 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">
-  <script id="hbeData" type="hbeData" data-hmacdigest="d6b83fd72e66735eb1946bf98fa6ddc5c397195982055e14929795a32448ab60">e6394f24cbc4b9c257a947e9735531ad27e1dc5709ab25d7f929947e98f2bd8ece64a5ed3534085f147ae1cc0dbf4284edee046664a53b665af3cb1e8595ccaa1c79b74ba3fbcac0c338fc75295fd18355f0c3f191bb071174e0121a0ebfa12ec639fad1027dd05297c897ffc8ca465ae9b03fe88899ca04b5b46acfa7a1e2e2abf10af32c2ce9bf0100312f64f320cc98c35de7d3adb87ea83468013f68dd81cea16dddcc3633ba040e46a0aa98abcbb0c7b6f89a2ee481a8a49f44725252c2568e2a76e27d602c15bcea625f56d99bf4288730e3debc7b47b13a10c5a29488e6a5424afcebdd4b82972f95aa1f69f8644be4922e8ab1754754d3e681860bad61eab0b052f2df3c926bcc1c3c7388c8cc7d74ff7002ae651af30ae55a6450efb90511207adb4ea64a7b9592d967f41727875709a3dec8421914fe3d733f93fbb28ad6f141d3671e57b554c60bb2924e618a4ed6e9569cf8c9307b4d267e0b13c19fd246776c8b3e3d079be8348187c34354c97bcef48b7ab3630375ede6f411f0adbe2dbc70c0c84cda65c990a470ae</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">当前文章暂不对外可见，请输入密码后查看！</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+    <div class="post-body" itemprop="articleBody"><h1 id="API-安全的-12-个技巧"><a href="#API-安全的-12-个技巧" class="headerlink" title="API 安全的 12 个技巧"></a>API 安全的 12 个技巧</h1><p><img src="/../images/45d16bfb-c541-4c01-8574-63cc39a5c560_1280x1664.webp" alt="45d16bfb-c541-4c01-8574-63cc39a5c560_1280x1664.webp"></p>
+<h1 id="OAuth2-0"><a href="#OAuth2-0" class="headerlink" title="OAuth2.0"></a>OAuth2.0</h1><h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><p>为了理解OAuth的适用场合，让我举一个假设的例子。</p>
+<p>有一个”云冲印”的网站，可以将用户储存在Google的照片，冲印出来。用户为了使用该服务，必须让”云冲印”读取自己储存在Google上的照片。</p>
+<p>云冲印<br><img src="/../images/bg2014051202.png" alt="bg2014051202.png"></p>
+<p>问题是只有得到用户的授权，Google才会同意”云冲印”读取这些照片。那么，”云冲印”怎样获得用户的授权呢？</p>
+<p>传统方法是，用户将自己的Google用户名和密码，告诉”云冲印”，后者就可以读取用户的照片了。这样的做法有以下几个严重的缺点。</p>
+<p>（1）”云冲印”为了后续的服务，会保存用户的密码，这样很不安全。<br>（2）Google不得不部署密码登录，而我们知道，单纯的密码登录并不安全。<br>（3）”云冲印”拥有了获取用户储存在Google所有资料的权力，用户没法限制”云冲印”获得授权的范围和有效期。<br>（4）用户只有修改密码，才能收回赋予”云冲印”的权力。但是这样做，会使得其他所有获得用户授权的第三方应用程序全部失效。<br>（5）只要有一个第三方应用程序被破解，就会导致用户密码泄漏，以及所有被密码保护的数据泄漏。</p>
+<p>OAuth就是为了解决上面这些问题而诞生的。</p>
+<p><img src="/../images/v2-fccac16d440911894f2ff356064563e9_1440w.webp" alt="v2-fccac16d440911894f2ff356064563e9_1440w.webp"><br>（A）用户打开客户端以后，客户端要求用户给予授权。<br>（B）用户同意给予客户端授权。<br>（C）客户端使用上一步获得的授权，向认证服务器申请令牌。<br>（D）认证服务器对客户端进行认证以后，确认无误，同意发放令牌。<br>（E）客户端使用令牌，向资源服务器申请获取资源。<br>（F）资源服务器确认令牌无误，同意向客户端开放资源。</p>
+<h1 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h1><ol>
+<li><a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html">理解OAuth 2.0</a></li>
+</ol>
+
     </div>
 
     
@@ -274,21 +280,18 @@
     
 
     <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/private/" rel="tag"># private</a>
-          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2024/01/10/%E4%BA%86%E8%A7%A3V8/" rel="prev" title="V8技能树">
-                  <i class="fa fa-angle-left"></i> V8技能树
+                <a href="/2024/01/11/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/" rel="prev" title="网络协议">
+                  <i class="fa fa-angle-left"></i> 网络协议
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2024/01/11/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/" rel="next" title="网络协议">
-                  网络协议 <i class="fa fa-angle-right"></i>
+                <a href="/2024/01/11/%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84/" rel="next" title="前端架构">
+                  前端架构 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
