@@ -149,7 +149,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -177,6 +177,133 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/01/12/JIT%E5%92%8CAOT/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/GW.webp">
+      <meta itemprop="name" content="microli">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="海纳百川">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 海纳百川">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/01/12/JIT%E5%92%8CAOT/" class="post-title-link" itemprop="url">JIT和AOT</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-01-12 11:05:51 / 修改时间：11:30:18" itemprop="dateCreated datePublished" datetime="2024-01-12T11:05:51+08:00">2024-01-12</time>
+    </span>
+
+  
+    <span id="/2024/01/12/JIT%E5%92%8CAOT/" class="post-meta-item leancloud_visitors" data-flag-title="JIT和AOT" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>723</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>3 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="AOT，JIT是什么"><a href="#AOT，JIT是什么" class="headerlink" title="AOT，JIT是什么"></a>AOT，JIT是什么</h1><p>程序主要有两种运行方式：静态编译与动态解释。</p>
+<p>静态编译的程序在执行前全部被翻译为机器码，通常将这种类型称为AOT （Ahead of time）即 “提前编译”；<br>而解释执行的则是一句一句边翻译边运行，通常将这种类型称为JIT（Just-in-time）即“即时编译”。</p>
+<blockquote>
+<p>AOT的标准就是看代码在执行之前是否需要编译，只要需要编译，无论其编译产物是字节码还是机器码，都属于AOT。</p>
+</blockquote>
+<h1 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h1><p>这两种编译方式的主要区别在于是否在“运行时”进行编译。</p>
+<h1 id="优劣"><a href="#优劣" class="headerlink" title="优劣"></a>优劣</h1><p>JIT优点：</p>
+<ol>
+<li>可以根据当前硬件情况实时编译生成最优机器指令（ps. AOT也可以做到，在用户使用是使用字节码根据机器情况在做一次编译）</li>
+<li>可以根据当前程序的运行情况生成最优的机器指令序列</li>
+<li>当程序需要支持动态链接时，只能使用JIT</li>
+<li>可以根据进程中内存的实际情况调整代码，使内存能够更充分的利用</li>
+</ol>
+<p>JIT缺点：</p>
+<ol>
+<li>编译需要占用运行时资源，会导致进程卡顿</li>
+<li>由于编译时间需要占用运行时间，对于某些代码的编译优化不能完全支持，需要在程序流畅和编译时间之间做权衡</li>
+<li>在编译准备和识别频繁使用的方法需要占用时间，使得初始编译不能达到最高性能</li>
+</ol>
+<p>AOT优点：</p>
+<ol>
+<li>在程序运行前编译，可以避免在运行时的编译性能消耗和内存消耗</li>
+<li>可以在程序运行初期就达到最高性能</li>
+<li>可以显著的加快程序的启动</li>
+</ol>
+<p>AOT缺点： </p>
+<ol>
+<li>在程序运行前编译会使程序安装的时间增加</li>
+<li>牺牲Java的一致性</li>
+<li>将提前编译的内容保存会占用更多的外存</li>
+</ol>
+<h1 id="JIT深度解析"><a href="#JIT深度解析" class="headerlink" title="JIT深度解析"></a>JIT深度解析</h1><p><img src="/../images/213b5edeabce499182278d7730227019.png" alt="213b5edeabce499182278d7730227019.png"></p>
+<p>对于一个长期运行的Java进程来说，每次执行都要经过 解释器 将程序翻译成机器指令去执行，那么这个效率就不是很好，这也是为什么Java被吐槽慢的缘故，<br>所以为了解决这个问题，才出现了 JIT。对于一些热点代码（经常被执行的，for循环）的一些代码，在运行时，JVM会将这些代码编译成机器可以执行的机器码，并缓存起来，这样下次执行这些代码的时候，就不需要再经过 解释器去编译了，机器可以直接运行这段程序，提高性能，这个就被称为 即时编译器，简称 JIT编译器。</p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ol>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/cristianoxm/article/details/126032096">JIT VS AOT</a></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -853,5 +980,4 @@
 
 
 
-</body>
-</html>
+<script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
