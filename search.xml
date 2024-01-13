@@ -1,27 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2024.01日记</title>
-    <url>/2024/01/10/2024-01%E6%97%A5%E8%AE%B0/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">
-  <script id="hbeData" type="hbeData" data-hmacdigest="d6b83fd72e66735eb1946bf98fa6ddc5c397195982055e14929795a32448ab60">e6394f24cbc4b9c257a947e9735531ad27e1dc5709ab25d7f929947e98f2bd8ece64a5ed3534085f147ae1cc0dbf4284edee046664a53b665af3cb1e8595ccaa1c79b74ba3fbcac0c338fc75295fd18355f0c3f191bb071174e0121a0ebfa12ec639fad1027dd05297c897ffc8ca465ae9b03fe88899ca04b5b46acfa7a1e2e2abf10af32c2ce9bf0100312f64f320cc98c35de7d3adb87ea83468013f68dd81cea16dddcc3633ba040e46a0aa98abcbb0c7b6f89a2ee481a8a49f44725252c2568e2a76e27d602c15bcea625f56d99bf4288730e3debc7b47b13a10c5a29488e6a5424afcebdd4b82972f95aa1f69f8644be4922e8ab1754754d3e681860bad61eab0b052f2df3c926bcc1c3c7388c8cc7d74ff7002ae651af30ae55a6450efb90511207adb4ea64a7b9592d967f41727875709a3dec8421914fe3d733f93fbb28ad6f141d3671e57b554c60bb2924e618a4ed6e9569cf8c9307b4d267e0b13c19fd246776c8b3e3d079be8348187c34354c97bcef48b7ab3630375ede6f411f0adbe2dbc70c0c84cda65c990a470ae</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">当前文章暂不对外可见，请输入密码后查看！</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <tags>
-        <tag>private</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>API安全技巧</title>
-    <url>/2024/01/11/API%E5%AE%89%E5%85%A8%E6%8A%80%E5%B7%A7/</url>
+    <url>/posts/55de1c2a/</url>
     <content><![CDATA[<h1 id="API-安全的-12-个技巧"><a href="#API-安全的-12-个技巧" class="headerlink" title="API 安全的 12 个技巧"></a>API 安全的 12 个技巧</h1><p><img src="/../images/45d16bfb-c541-4c01-8574-63cc39a5c560_1280x1664.webp" alt="45d16bfb-c541-4c01-8574-63cc39a5c560_1280x1664.webp"></p>
 <h1 id="OAuth2-0"><a href="#OAuth2-0" class="headerlink" title="OAuth2.0"></a>OAuth2.0</h1><h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><p>为了理解OAuth的适用场合，让我举一个假设的例子。</p>
 <p>有一个”云冲印”的网站，可以将用户储存在Google的照片，冲印出来。用户为了使用该服务，必须让”云冲印”读取自己储存在Google上的照片。</p>
@@ -38,13 +19,35 @@
   </entry>
   <entry>
     <title>API测试</title>
-    <url>/2024/01/11/API%E6%B5%8B%E8%AF%95/</url>
+    <url>/posts/873cc8b2/</url>
     <content><![CDATA[<h1 id="9种API测试"><a href="#9种API测试" class="headerlink" title="9种API测试"></a>9种API测试</h1><p><img src="/../images/c53f283e-6834-45b6-beb9-57b10b2a22fd_1280x1664.webp" alt="c53f283e-6834-45b6-beb9-57b10b2a22fd_1280x1664.webp"></p>
 ]]></content>
   </entry>
   <entry>
+    <title>2024.01日记</title>
+    <url>/posts/2916158c/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">
+  <script id="hbeData" type="hbeData" data-hmacdigest="d6b83fd72e66735eb1946bf98fa6ddc5c397195982055e14929795a32448ab60">e6394f24cbc4b9c257a947e9735531ad27e1dc5709ab25d7f929947e98f2bd8ece64a5ed3534085f147ae1cc0dbf4284edee046664a53b665af3cb1e8595ccaa1c79b74ba3fbcac0c338fc75295fd18355f0c3f191bb071174e0121a0ebfa12ec639fad1027dd05297c897ffc8ca465ae9b03fe88899ca04b5b46acfa7a1e2e2abf10af32c2ce9bf0100312f64f320cc98c35de7d3adb87ea83468013f68dd81cea16dddcc3633ba040e46a0aa98abcbb0c7b6f89a2ee481a8a49f44725252c2568e2a76e27d602c15bcea625f56d99bf4288730e3debc7b47b13a10c5a29488e6a5424afcebdd4b82972f95aa1f69f8644be4922e8ab1754754d3e681860bad61eab0b052f2df3c926bcc1c3c7388c8cc7d74ff7002ae651af30ae55a6450efb90511207adb4ea64a7b9592d967f41727875709a3dec8421914fe3d733f93fbb28ad6f141d3671e57b554c60bb2924e618a4ed6e9569cf8c9307b4d267e0b13c19fd246776c8b3e3d079be8348187c34354c97bcef48b7ab3630375ede6f411f0adbe2dbc70c0c84cda65c990a470ae</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">当前文章暂不对外可见，请输入密码后查看！</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>心得</category>
+      </categories>
+      <tags>
+        <tag>private</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JIT和AOT</title>
-    <url>/2024/01/12/JIT%E5%92%8CAOT/</url>
+    <url>/posts/6c825f47/</url>
     <content><![CDATA[<h1 id="AOT，JIT是什么"><a href="#AOT，JIT是什么" class="headerlink" title="AOT，JIT是什么"></a>AOT，JIT是什么</h1><p>程序主要有两种运行方式：静态编译与动态解释。</p>
 <p>静态编译的程序在执行前全部被翻译为机器码，通常将这种类型称为AOT （Ahead of time）即 “提前编译”；<br>而解释执行的则是一句一句边翻译边运行，通常将这种类型称为JIT（Just-in-time）即“即时编译”。</p>
 <span id="more"></span>
@@ -87,7 +90,7 @@
   </entry>
   <entry>
     <title>V8技能树</title>
-    <url>/2024/01/10/%E4%BA%86%E8%A7%A3V8/</url>
+    <url>/posts/e4409905/</url>
     <content><![CDATA[<h1 id="什么是-V8"><a href="#什么是-V8" class="headerlink" title="什么是 V8?"></a>什么是 V8?</h1><p>V8 是 JavaScript 虚拟机的一种。将人类能够理解的编程语言 JavaScript，翻译成机器能够理解的机器语言。</p>
 <span id="more"></span>
 
@@ -106,16 +109,22 @@
 <p>要想充分了解 V8 是怎么工作的，除了要分析编译流水线，我们还需要了解另外两个非常重要的特性，那就是事件循环系统和垃圾回收机制。</p>
 <h1 id="技能树"><a href="#技能树" class="headerlink" title="技能树"></a>技能树</h1><p><img src="/../images/%E4%B8%8B%E8%BD%BD%20(2).jpeg" alt="下载 (2).jpeg"></p>
 ]]></content>
+      <categories>
+        <category>虚拟机</category>
+      </categories>
+      <tags>
+        <tag>V8</tag>
+      </tags>
   </entry>
   <entry>
     <title>前端架构</title>
-    <url>/2024/01/11/%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84/</url>
+    <url>/posts/926db354/</url>
     <content><![CDATA[<h1 id="五种前端架构"><a href="#五种前端架构" class="headerlink" title="五种前端架构"></a>五种前端架构</h1><p><img src="/../images/F_38UuNbEAACWtu.jpeg" alt="F_38UuNbEAACWtu.jpeg"></p>
 ]]></content>
   </entry>
   <entry>
     <title>网络</title>
-    <url>/2024/01/11/%E7%BD%91%E7%BB%9C/</url>
+    <url>/posts/50daec4/</url>
     <content><![CDATA[<h1 id="8-种常用网络协议"><a href="#8-种常用网络协议" class="headerlink" title="8 种常用网络协议"></a>8 种常用网络协议</h1><p><img src="/../images/20231021-bf786236-f777-481b-ba9e-65921c16752e.gif" alt="20231021-bf786236-f777-481b-ba9e-65921c16752e.gif"></p>
 <h1 id="Cookies-与-Sessions"><a href="#Cookies-与-Sessions" class="headerlink" title="Cookies 与 Sessions"></a>Cookies 与 Sessions</h1><p><img src="/../images/c05744c903f54153a28805cd182107bb~tplv-obj_1280_1664.gif" alt="c05744c903f54153a28805cd182107bb~tplv-obj_1280_1664.gif"></p>
 <h1 id="URL-URI-URN"><a href="#URL-URI-URN" class="headerlink" title="URL, URI, URN"></a>URL, URI, URN</h1><p><img src="/../images/0_cU9y8hm7YEjkVZBJ.webp" alt="0_cU9y8hm7YEjkVZBJ.webp"></p>
