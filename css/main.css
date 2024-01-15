@@ -184,7 +184,7 @@ body {
   background: var(--body-bg-color);
   box-sizing: border-box;
   color: var(--text-color);
-  font-family: SimSun, 'Courier New', 'Microsoft YaHei', sans-serif;
+  font-family: Courier New, 'Courier New', sans-serif;
   font-size: 1em;
   line-height: 2;
   min-height: 100%;
@@ -197,8 +197,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: SimSun, 'Courier New', 'Microsoft YaHei', sans-serif;
-  font-weight: bold;
+  font-family: Courier New, Courier New, 'Courier New', sans-serif;
+  font-weight: normal;
   line-height: 1.5;
   margin: 30px 0 15px;
 }
@@ -261,7 +261,7 @@ blockquote cite::before {
   padding: 0 5px;
 }
 dt {
-  font-weight: bold;
+  font-weight: normal;
 }
 dd {
   margin: 0;
@@ -483,7 +483,7 @@ pre figcaption a:hover {
 }
 pre,
 code {
-  font-family: consolas, Menlo, monospace, 'Courier New', 'Microsoft YaHei';
+  font-family: Courier New, consolas, Menlo, monospace, 'Courier New';
 }
 code {
   border-radius: 3px;
@@ -1057,7 +1057,7 @@ pre code {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: SimSun, 'Courier New', 'Microsoft YaHei', sans-serif;
+  font-family: Courier New, 'Courier New', sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   line-height: 1.5;
@@ -1149,7 +1149,7 @@ pre code {
 }
 .menu-item .badge {
   display: inline-block;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1;
   margin-left: 0.35em;
   margin-top: 0.35em;
@@ -1644,7 +1644,7 @@ pre code {
 }
 .posts-collapse .post-content .collection-year {
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: normal;
   margin: 60px 0;
   position: relative;
 }
@@ -1714,7 +1714,7 @@ pre code {
   width: 4px;
 }
 .post-body {
-  font-family: SimSun, 'Courier New', 'Microsoft YaHei', sans-serif;
+  font-family: Courier New, Courier New, 'Courier New', sans-serif;
   overflow-wrap: break-word;
 }
 @media (min-width: 1200px) {
@@ -1803,7 +1803,7 @@ pre code {
 .post-body .fancybox + figcaption {
   color: #999;
   font-size: 0.875em;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1;
   margin: -15px auto 15px;
   text-align: center;
@@ -1900,7 +1900,7 @@ pre code {
 }
 .posts-expand .post-meta-container {
   color: #999;
-  font-family: SimSun, 'Courier New', 'Microsoft YaHei', sans-serif;
+  font-family: Courier New, Courier New, 'Courier New', sans-serif;
   font-size: 0.75em;
   margin-top: 3px;
 }
@@ -2084,7 +2084,7 @@ pre code {
   color: #fff;
   content: 'NOW';
   display: inline-block;
-  font-weight: bold;
+  font-weight: normal;
   padding: 0 5px;
 }
 .event-list .event {
@@ -2180,7 +2180,7 @@ ul.breadcrumb li:not(:first-child)::before {
   padding: 0.5em;
 }
 ul.breadcrumb li:last-child {
-  font-weight: bold;
+  font-weight: normal;
 }
 .tag-cloud {
   display: inline-block;
@@ -2188,7 +2188,7 @@ ul.breadcrumb li:last-child {
   border: 1px solid #ccc;
 }
 .tag-cloud-title {
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 10px;
 }
 .tag-cloud-tag {
@@ -2325,7 +2325,7 @@ ul.breadcrumb li:last-child {
   padding: 0;
 }
 .search-popup a.search-result-title {
-  font-weight: bold;
+  font-weight: normal;
 }
 .search-popup p.search-result {
   border-bottom: 1px dashed #ccc;
@@ -2349,7 +2349,7 @@ mark.search-keyword {
   background: transparent;
   border-bottom: 1px dashed #ff2a2a;
   color: #ff2a2a;
-  font-weight: bold;
+  font-weight: normal;
 }
 .use-motion .animated {
   animation-fill-mode: none;
@@ -2532,7 +2532,7 @@ header.header {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ff558e;
+  background: #17ee0d;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2575,4 +2575,13 @@ header.header {
   .sidebar-dimmer {
     display: none;
   }
+}
+code {
+  padding: 2px 4px;
+  overflow-wrap: break-word;
+  color: #ff8c00;
+  background: #f9f2f4;
+  border-radius: 3px;
+  font-size: 18px;
+  font-family: Courier New;
 }
