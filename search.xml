@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>API安全技巧</title>
+    <url>/posts/55de1c2a/</url>
+    <content><![CDATA[<h1 id="API-安全的-12-个技巧"><a href="#API-安全的-12-个技巧" class="headerlink" title="API 安全的 12 个技巧"></a>API 安全的 12 个技巧</h1><span id="more"></span>
+
+<p><img src="/../images/45d16bfb-c541-4c01-8574-63cc39a5c560_1280x1664.webp" alt="45d16bfb-c541-4c01-8574-63cc39a5c560_1280x1664.webp"></p>
+<h1 id="OAuth2-0"><a href="#OAuth2-0" class="headerlink" title="OAuth2.0"></a>OAuth2.0</h1><h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><p>为了理解OAuth的适用场合，让我举一个假设的例子。</p>
+<p>有一个”云冲印”的网站，可以将用户储存在Google的照片，冲印出来。用户为了使用该服务，必须让”云冲印”读取自己储存在Google上的照片。</p>
+<p>云冲印<br><img src="/../images/bg2014051202.png" alt="bg2014051202.png"></p>
+<p>问题是只有得到用户的授权，Google才会同意”云冲印”读取这些照片。那么，”云冲印”怎样获得用户的授权呢？</p>
+<p>传统方法是，用户将自己的Google用户名和密码，告诉”云冲印”，后者就可以读取用户的照片了。这样的做法有以下几个严重的缺点。</p>
+<p>（1）”云冲印”为了后续的服务，会保存用户的密码，这样很不安全。<br>（2）Google不得不部署密码登录，而我们知道，单纯的密码登录并不安全。<br>（3）”云冲印”拥有了获取用户储存在Google所有资料的权力，用户没法限制”云冲印”获得授权的范围和有效期。<br>（4）用户只有修改密码，才能收回赋予”云冲印”的权力。但是这样做，会使得其他所有获得用户授权的第三方应用程序全部失效。<br>（5）只要有一个第三方应用程序被破解，就会导致用户密码泄漏，以及所有被密码保护的数据泄漏。</p>
+<p>OAuth就是为了解决上面这些问题而诞生的。</p>
+<p><img src="/../images/v2-fccac16d440911894f2ff356064563e9_1440w.webp" alt="v2-fccac16d440911894f2ff356064563e9_1440w.webp"><br>（A）用户打开客户端以后，客户端要求用户给予授权。<br>（B）用户同意给予客户端授权。<br>（C）客户端使用上一步获得的授权，向认证服务器申请令牌。<br>（D）认证服务器对客户端进行认证以后，确认无误，同意发放令牌。<br>（E）客户端使用令牌，向资源服务器申请获取资源。<br>（F）资源服务器确认令牌无误，同意向客户端开放资源。</p>
+<h1 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h1><ol>
+<li><a href="https://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html">理解OAuth 2.0</a></li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
     <title>2024.01日记</title>
     <url>/posts/2916158c/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">
@@ -21,25 +40,6 @@
       <tags>
         <tag>private</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>API安全技巧</title>
-    <url>/posts/55de1c2a/</url>
-    <content><![CDATA[<h1 id="API-安全的-12-个技巧"><a href="#API-安全的-12-个技巧" class="headerlink" title="API 安全的 12 个技巧"></a>API 安全的 12 个技巧</h1><span id="more"></span>
-
-<p><img src="/../images/45d16bfb-c541-4c01-8574-63cc39a5c560_1280x1664.webp" alt="45d16bfb-c541-4c01-8574-63cc39a5c560_1280x1664.webp"></p>
-<h1 id="OAuth2-0"><a href="#OAuth2-0" class="headerlink" title="OAuth2.0"></a>OAuth2.0</h1><h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><p>为了理解OAuth的适用场合，让我举一个假设的例子。</p>
-<p>有一个”云冲印”的网站，可以将用户储存在Google的照片，冲印出来。用户为了使用该服务，必须让”云冲印”读取自己储存在Google上的照片。</p>
-<p>云冲印<br><img src="/../images/bg2014051202.png" alt="bg2014051202.png"></p>
-<p>问题是只有得到用户的授权，Google才会同意”云冲印”读取这些照片。那么，”云冲印”怎样获得用户的授权呢？</p>
-<p>传统方法是，用户将自己的Google用户名和密码，告诉”云冲印”，后者就可以读取用户的照片了。这样的做法有以下几个严重的缺点。</p>
-<p>（1）”云冲印”为了后续的服务，会保存用户的密码，这样很不安全。<br>（2）Google不得不部署密码登录，而我们知道，单纯的密码登录并不安全。<br>（3）”云冲印”拥有了获取用户储存在Google所有资料的权力，用户没法限制”云冲印”获得授权的范围和有效期。<br>（4）用户只有修改密码，才能收回赋予”云冲印”的权力。但是这样做，会使得其他所有获得用户授权的第三方应用程序全部失效。<br>（5）只要有一个第三方应用程序被破解，就会导致用户密码泄漏，以及所有被密码保护的数据泄漏。</p>
-<p>OAuth就是为了解决上面这些问题而诞生的。</p>
-<p><img src="/../images/v2-fccac16d440911894f2ff356064563e9_1440w.webp" alt="v2-fccac16d440911894f2ff356064563e9_1440w.webp"><br>（A）用户打开客户端以后，客户端要求用户给予授权。<br>（B）用户同意给予客户端授权。<br>（C）客户端使用上一步获得的授权，向认证服务器申请令牌。<br>（D）认证服务器对客户端进行认证以后，确认无误，同意发放令牌。<br>（E）客户端使用令牌，向资源服务器申请获取资源。<br>（F）资源服务器确认令牌无误，同意向客户端开放资源。</p>
-<h1 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h1><ol>
-<li><a href="https://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html">理解OAuth 2.0</a></li>
-</ol>
-]]></content>
   </entry>
   <entry>
     <title>API测试</title>
@@ -93,6 +93,34 @@
 ]]></content>
   </entry>
   <entry>
+    <title>V8技能树</title>
+    <url>/posts/e4409905/</url>
+    <content><![CDATA[<h1 id="什么是-V8"><a href="#什么是-V8" class="headerlink" title="什么是 V8?"></a>什么是 V8?</h1><p>V8 是 JavaScript 虚拟机的一种。将人类能够理解的编程语言 JavaScript，翻译成机器能够理解的机器语言。</p>
+<span id="more"></span>
+
+<p><img src="/../images/download.jpg" alt="download.jpg"></p>
+<h1 id="V8编译流水线"><a href="#V8编译流水线" class="headerlink" title="V8编译流水线"></a>V8编译流水线</h1><p><img src="/../images/%E4%B8%8B%E8%BD%BD%20(1).jpeg" alt="下载 (1).jpeg"></p>
+<ol>
+<li>初始化基础环境；</li>
+<li>解析源码生成 AST 和作用域；</li>
+<li>依据 AST 和作用域生成字节码；</li>
+<li>解释执行字节码；监听热点代码；</li>
+<li>优化热点代码为二进制的机器代码；</li>
+<li>反优化生成的二进制机器代码。</li>
+</ol>
+<p>这里你需要注意的是，JavaScript 是一门动态语言，在运行过程中，某些被优化的结构可能会被 V8 动态修改了，这会导致之前被优化的代码失效，如果某块优化之后的代码失效了，那么编译器需要执行反优化操作。</p>
+<p>编译流水线本身并不复杂，但是其中涉及到了很多技术，诸如 JIT、延迟解析、隐藏类、内<br>联缓存等等。</p>
+<p>要想充分了解 V8 是怎么工作的，除了要分析编译流水线，我们还需要了解另外两个非常重要的特性，那就是事件循环系统和垃圾回收机制。</p>
+<h1 id="技能树"><a href="#技能树" class="headerlink" title="技能树"></a>技能树</h1><p><img src="/../images/%E4%B8%8B%E8%BD%BD%20(2).jpeg" alt="下载 (2).jpeg"></p>
+]]></content>
+      <categories>
+        <category>虚拟机</category>
+      </categories>
+      <tags>
+        <tag>V8</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>var 和 let</title>
     <url>/posts/bf2b1bc1/</url>
     <content><![CDATA[<h1 id="作用域："><a href="#作用域：" class="headerlink" title="作用域："></a><strong>作用域：</strong></h1><ul>
@@ -133,34 +161,6 @@
 <p>在这个示例中，由于 <code>var</code> 声明的 <code>i</code> 在全局作用域中共享，所有的闭包都使用了相同的 <code>i</code> 值。</p>
 <p>通过使用 <code>let</code> 声明变量，我们确保了每个闭包都可以访问到正确的值，而不会受到循环的影响。</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>V8技能树</title>
-    <url>/posts/e4409905/</url>
-    <content><![CDATA[<h1 id="什么是-V8"><a href="#什么是-V8" class="headerlink" title="什么是 V8?"></a>什么是 V8?</h1><p>V8 是 JavaScript 虚拟机的一种。将人类能够理解的编程语言 JavaScript，翻译成机器能够理解的机器语言。</p>
-<span id="more"></span>
-
-<p><img src="/../images/download.jpg" alt="download.jpg"></p>
-<h1 id="V8编译流水线"><a href="#V8编译流水线" class="headerlink" title="V8编译流水线"></a>V8编译流水线</h1><p><img src="/../images/%E4%B8%8B%E8%BD%BD%20(1).jpeg" alt="下载 (1).jpeg"></p>
-<ol>
-<li>初始化基础环境；</li>
-<li>解析源码生成 AST 和作用域；</li>
-<li>依据 AST 和作用域生成字节码；</li>
-<li>解释执行字节码；监听热点代码；</li>
-<li>优化热点代码为二进制的机器代码；</li>
-<li>反优化生成的二进制机器代码。</li>
-</ol>
-<p>这里你需要注意的是，JavaScript 是一门动态语言，在运行过程中，某些被优化的结构可能会被 V8 动态修改了，这会导致之前被优化的代码失效，如果某块优化之后的代码失效了，那么编译器需要执行反优化操作。</p>
-<p>编译流水线本身并不复杂，但是其中涉及到了很多技术，诸如 JIT、延迟解析、隐藏类、内<br>联缓存等等。</p>
-<p>要想充分了解 V8 是怎么工作的，除了要分析编译流水线，我们还需要了解另外两个非常重要的特性，那就是事件循环系统和垃圾回收机制。</p>
-<h1 id="技能树"><a href="#技能树" class="headerlink" title="技能树"></a>技能树</h1><p><img src="/../images/%E4%B8%8B%E8%BD%BD%20(2).jpeg" alt="下载 (2).jpeg"></p>
-]]></content>
-      <categories>
-        <category>虚拟机</category>
-      </categories>
-      <tags>
-        <tag>V8</tag>
-      </tags>
   </entry>
   <entry>
     <title>前端架构</title>
