@@ -1,6 +1,5 @@
 http://example.com/posts/bf2b1bc1/
 http://example.com/posts/50daec4/
-http://example.com/posts/2916158c/
 http://example.com/posts/873cc8b2/
 http://example.com/posts/55de1c2a/
 http://example.com/posts/926db354/
@@ -9,7 +8,5 @@ http://example.com/posts/6c825f47/
 http://example.com/categories/index.html
 http://example.com/tags/index.html
 http://example.com/
-http://example.com/tags/private/
 http://example.com/tags/V8/
-http://example.com/categories/%E5%BF%83%E5%BE%97/
 http://example.com/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/
