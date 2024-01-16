@@ -198,7 +198,7 @@ h4,
 h5,
 h6 {
   font-family: Courier New, Courier New, 'Courier New', sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1.5;
   margin: 30px 0 15px;
 }
@@ -261,7 +261,7 @@ blockquote cite::before {
   padding: 0 5px;
 }
 dt {
-  font-weight: normal;
+  font-weight: bold;
 }
 dd {
   margin: 0;
@@ -1149,7 +1149,7 @@ pre code {
 }
 .menu-item .badge {
   display: inline-block;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1;
   margin-left: 0.35em;
   margin-top: 0.35em;
@@ -1644,7 +1644,7 @@ pre code {
 }
 .posts-collapse .post-content .collection-year {
   font-size: 1.5em;
-  font-weight: normal;
+  font-weight: bold;
   margin: 60px 0;
   position: relative;
 }
@@ -1803,7 +1803,7 @@ pre code {
 .post-body .fancybox + figcaption {
   color: #999;
   font-size: 0.875em;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1;
   margin: -15px auto 15px;
   text-align: center;
@@ -2084,7 +2084,7 @@ pre code {
   color: #fff;
   content: 'NOW';
   display: inline-block;
-  font-weight: normal;
+  font-weight: bold;
   padding: 0 5px;
 }
 .event-list .event {
@@ -2180,7 +2180,7 @@ ul.breadcrumb li:not(:first-child)::before {
   padding: 0.5em;
 }
 ul.breadcrumb li:last-child {
-  font-weight: normal;
+  font-weight: bold;
 }
 .tag-cloud {
   display: inline-block;
@@ -2188,7 +2188,7 @@ ul.breadcrumb li:last-child {
   border: 1px solid #ccc;
 }
 .tag-cloud-title {
-  font-weight: normal;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 .tag-cloud-tag {
@@ -2325,7 +2325,7 @@ ul.breadcrumb li:last-child {
   padding: 0;
 }
 .search-popup a.search-result-title {
-  font-weight: normal;
+  font-weight: bold;
 }
 .search-popup p.search-result {
   border-bottom: 1px dashed #ccc;
@@ -2349,7 +2349,7 @@ mark.search-keyword {
   background: transparent;
   border-bottom: 1px dashed #ff2a2a;
   color: #ff2a2a;
-  font-weight: normal;
+  font-weight: bold;
 }
 .use-motion .animated {
   animation-fill-mode: none;
@@ -2532,7 +2532,7 @@ header.header {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #4dc1ff;
+  background: #859f11;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
