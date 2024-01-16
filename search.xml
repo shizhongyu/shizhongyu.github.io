@@ -93,42 +93,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>V8技能树</title>
-    <url>/posts/e4409905/</url>
-    <content><![CDATA[<h1 id="什么是-V8"><a href="#什么是-V8" class="headerlink" title="什么是 V8?"></a>什么是 V8?</h1><p>V8 是 JavaScript 虚拟机的一种。将人类能够理解的编程语言 JavaScript，翻译成机器能够理解的机器语言。</p>
-<span id="more"></span>
-
-<p><img src="/../images/download.jpg" alt="download.jpg"></p>
-<h1 id="V8编译流水线"><a href="#V8编译流水线" class="headerlink" title="V8编译流水线"></a>V8编译流水线</h1><p><img src="/../images/%E4%B8%8B%E8%BD%BD%20(1).jpeg" alt="下载 (1).jpeg"></p>
-<ol>
-<li>初始化基础环境；</li>
-<li>解析源码生成 AST 和作用域；</li>
-<li>依据 AST 和作用域生成字节码；</li>
-<li>解释执行字节码；监听热点代码；</li>
-<li>优化热点代码为二进制的机器代码；</li>
-<li>反优化生成的二进制机器代码。</li>
-</ol>
-<p>这里你需要注意的是，JavaScript 是一门动态语言，在运行过程中，某些被优化的结构可能会被 V8 动态修改了，这会导致之前被优化的代码失效，如果某块优化之后的代码失效了，那么编译器需要执行反优化操作。</p>
-<p>编译流水线本身并不复杂，但是其中涉及到了很多技术，诸如 JIT、延迟解析、隐藏类、内<br>联缓存等等。</p>
-<p>要想充分了解 V8 是怎么工作的，除了要分析编译流水线，我们还需要了解另外两个非常重要的特性，那就是事件循环系统和垃圾回收机制。</p>
-<h1 id="技能树"><a href="#技能树" class="headerlink" title="技能树"></a>技能树</h1><p><img src="/../images/%E4%B8%8B%E8%BD%BD%20(2).jpeg" alt="下载 (2).jpeg"></p>
-]]></content>
-      <categories>
-        <category>虚拟机</category>
-      </categories>
-      <tags>
-        <tag>V8</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>前端架构</title>
-    <url>/posts/926db354/</url>
-    <content><![CDATA[<h1 id="五种前端架构"><a href="#五种前端架构" class="headerlink" title="五种前端架构"></a>五种前端架构</h1><span id="more"></span>
-
-<p><img src="/../images/F_38UuNbEAACWtu.jpeg" alt="F_38UuNbEAACWtu.jpeg"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>var 和 let</title>
     <url>/posts/bf2b1bc1/</url>
     <content><![CDATA[<h1 id="作用域："><a href="#作用域：" class="headerlink" title="作用域："></a><strong>作用域：</strong></h1><ul>
@@ -168,6 +132,42 @@
 
 <p>在这个示例中，由于 <code>var</code> 声明的 <code>i</code> 在全局作用域中共享，所有的闭包都使用了相同的 <code>i</code> 值。</p>
 <p>通过使用 <code>let</code> 声明变量，我们确保了每个闭包都可以访问到正确的值，而不会受到循环的影响。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>V8技能树</title>
+    <url>/posts/e4409905/</url>
+    <content><![CDATA[<h1 id="什么是-V8"><a href="#什么是-V8" class="headerlink" title="什么是 V8?"></a>什么是 V8?</h1><p>V8 是 JavaScript 虚拟机的一种。将人类能够理解的编程语言 JavaScript，翻译成机器能够理解的机器语言。</p>
+<span id="more"></span>
+
+<p><img src="/../images/download.jpg" alt="download.jpg"></p>
+<h1 id="V8编译流水线"><a href="#V8编译流水线" class="headerlink" title="V8编译流水线"></a>V8编译流水线</h1><p><img src="/../images/%E4%B8%8B%E8%BD%BD%20(1).jpeg" alt="下载 (1).jpeg"></p>
+<ol>
+<li>初始化基础环境；</li>
+<li>解析源码生成 AST 和作用域；</li>
+<li>依据 AST 和作用域生成字节码；</li>
+<li>解释执行字节码；监听热点代码；</li>
+<li>优化热点代码为二进制的机器代码；</li>
+<li>反优化生成的二进制机器代码。</li>
+</ol>
+<p>这里你需要注意的是，JavaScript 是一门动态语言，在运行过程中，某些被优化的结构可能会被 V8 动态修改了，这会导致之前被优化的代码失效，如果某块优化之后的代码失效了，那么编译器需要执行反优化操作。</p>
+<p>编译流水线本身并不复杂，但是其中涉及到了很多技术，诸如 JIT、延迟解析、隐藏类、内<br>联缓存等等。</p>
+<p>要想充分了解 V8 是怎么工作的，除了要分析编译流水线，我们还需要了解另外两个非常重要的特性，那就是事件循环系统和垃圾回收机制。</p>
+<h1 id="技能树"><a href="#技能树" class="headerlink" title="技能树"></a>技能树</h1><p><img src="/../images/%E4%B8%8B%E8%BD%BD%20(2).jpeg" alt="下载 (2).jpeg"></p>
+]]></content>
+      <categories>
+        <category>虚拟机</category>
+      </categories>
+      <tags>
+        <tag>V8</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端架构</title>
+    <url>/posts/926db354/</url>
+    <content><![CDATA[<h1 id="五种前端架构"><a href="#五种前端架构" class="headerlink" title="五种前端架构"></a>五种前端架构</h1><span id="more"></span>
+
+<p><img src="/../images/F_38UuNbEAACWtu.jpeg" alt="F_38UuNbEAACWtu.jpeg"></p>
 ]]></content>
   </entry>
   <entry>
