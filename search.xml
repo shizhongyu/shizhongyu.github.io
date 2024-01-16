@@ -42,14 +42,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>API测试</title>
-    <url>/posts/873cc8b2/</url>
-    <content><![CDATA[<h1 id="9种API测试"><a href="#9种API测试" class="headerlink" title="9种API测试"></a>9种API测试</h1><span id="more"></span>
-
-<p><img src="/../images/c53f283e-6834-45b6-beb9-57b10b2a22fd_1280x1664.webp" alt="c53f283e-6834-45b6-beb9-57b10b2a22fd_1280x1664.webp"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>JIT和AOT</title>
     <url>/posts/6c825f47/</url>
     <content><![CDATA[<h1 id="AOT，JIT是什么"><a href="#AOT，JIT是什么" class="headerlink" title="AOT，JIT是什么"></a>AOT，JIT是什么</h1><p>程序主要有两种运行方式：静态编译与动态解释。</p>
@@ -132,6 +124,14 @@
 
 <p>在这个示例中，由于 <code>var</code> 声明的 <code>i</code> 在全局作用域中共享，所有的闭包都使用了相同的 <code>i</code> 值。</p>
 <p>通过使用 <code>let</code> 声明变量，我们确保了每个闭包都可以访问到正确的值，而不会受到循环的影响。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>API测试</title>
+    <url>/posts/873cc8b2/</url>
+    <content><![CDATA[<h1 id="9种API测试"><a href="#9种API测试" class="headerlink" title="9种API测试"></a>9种API测试</h1><span id="more"></span>
+
+<p><img src="/../images/c53f283e-6834-45b6-beb9-57b10b2a22fd_1280x1664.webp" alt="c53f283e-6834-45b6-beb9-57b10b2a22fd_1280x1664.webp"></p>
 ]]></content>
   </entry>
   <entry>
