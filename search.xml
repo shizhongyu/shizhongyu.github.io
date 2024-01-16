@@ -93,14 +93,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>前端架构</title>
-    <url>/posts/926db354/</url>
-    <content><![CDATA[<h1 id="五种前端架构"><a href="#五种前端架构" class="headerlink" title="五种前端架构"></a>五种前端架构</h1><span id="more"></span>
-
-<p><img src="/../images/F_38UuNbEAACWtu.jpeg" alt="F_38UuNbEAACWtu.jpeg"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>V8技能树</title>
     <url>/posts/e4409905/</url>
     <content><![CDATA[<h1 id="什么是-V8"><a href="#什么是-V8" class="headerlink" title="什么是 V8?"></a>什么是 V8?</h1><p>V8 是 JavaScript 虚拟机的一种。将人类能够理解的编程语言 JavaScript，翻译成机器能够理解的机器语言。</p>
@@ -168,6 +160,14 @@
 
 <p>在这个示例中，由于 <code>var</code> 声明的 <code>i</code> 在全局作用域中共享，所有的闭包都使用了相同的 <code>i</code> 值。</p>
 <p>通过使用 <code>let</code> 声明变量，我们确保了每个闭包都可以访问到正确的值，而不会受到循环的影响。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>前端架构</title>
+    <url>/posts/926db354/</url>
+    <content><![CDATA[<h1 id="五种前端架构"><a href="#五种前端架构" class="headerlink" title="五种前端架构"></a>五种前端架构</h1><span id="more"></span>
+
+<p><img src="/../images/F_38UuNbEAACWtu.jpeg" alt="F_38UuNbEAACWtu.jpeg"></p>
 ]]></content>
   </entry>
   <entry>
