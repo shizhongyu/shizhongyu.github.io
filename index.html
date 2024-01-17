@@ -150,7 +150,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -279,6 +279,153 @@
             </div>
           <!--/noindex-->
         
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/posts/73a9e291/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/author.jpg">
+      <meta itemprop="name" content="microli">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="海纳百川">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 海纳百川">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/posts/73a9e291/" class="post-title-link" itemprop="url">clean code</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-01-17 17:19:13" itemprop="dateCreated datePublished" datetime="2024-01-17T17:19:13+08:00">2024-01-17</time>
+    </span>
+
+  
+    <span id="/posts/73a9e291/" class="post-meta-item leancloud_visitors" data-flag-title="clean code" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/posts/73a9e291/#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/posts/73a9e291/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>727</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>3 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><h2 id="命令查询分离"><a href="#命令查询分离" class="headerlink" title="命令查询分离"></a>命令查询分离</h2><p>函数要么做某事，要么回答某事，但不能两者兼而有之。</p>
+<p><strong>错误示例：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">set</span><span class="params">(String attribute, String value)</span>;</span><br></pre></td></tr></table></figure>
+
+<p>该函数设置某个指定属性，如果成功就返回 ue，如果不存在那个属性则返回 false。这样就导致了以下语句:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (set(<span class="string">&quot;username&quot;</span>, <span class="string">&quot;unclebob&quot;</span>))...</span><br></pre></td></tr></table></figure>
+
+<p><strong>正确示例：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (attributeExists(<span class="string">&quot;username&quot;</span>)) &#123;</span><br><span class="line">    setAttribute(<span class="string">&quot;username&quot;</span>, <span class="string">&quot;unclebob&quot;</span>);</span><br><span class="line">    ... </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="函数参数"><a href="#函数参数" class="headerlink" title="函数参数"></a>函数参数</h2><p>最理想的参数数量是零(零参数函数)，其次是一《单参数函数)，再次是二 (双参数函数)，应尽量避免三 (三参数函数)。有足够特殊的理由才能用三个以上参数《多参数函数)-所以无论如何也不要这么做。</p>
+<h2 id="使用异常替代返回错误码"><a href="#使用异常替代返回错误码" class="headerlink" title="使用异常替代返回错误码"></a>使用异常替代返回错误码</h2><p>从指令式函数返回错误码轻微违反了指令与询问分隔的规则。它鼓励了在 if语句判断中把指令当作表达式使用。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (deletePage(page) == E_OK)</span><br></pre></td></tr></table></figure>
+<p>这不会引起动词&#x2F;形容词混淆，但却导致更深层次的嵌套结构。当返回错误码时，就是在要求调用者立刻处理错误</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (deletePage(page) == E_OK) &#123;</span><br><span class="line">    <span class="keyword">if</span> (registry.deleteReference(page.name) == E_OK) &#123;</span><br><span class="line">        <span class="keyword">if</span> (configKeys.deleteKey(page.name.makeKey()) == E_OK)&#123;</span><br><span class="line">            logger.log(<span class="string">&quot;page deleted&quot;</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            logger.log(<span class="string">&quot;configKey not deleted&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        logger.log(<span class="string">&quot;deleteReference from registry failed&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    logger.log(<span class="string">&quot;delete failed&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> E_ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>另一方面，如果使用异常替代返回错误码，错误处理代码就能从主路径代码中分离出来，得到简化:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    deletePage(page);</span><br><span class="line">    registry.deleteReference(page.name);</span><br><span class="line">    configKeys.deleteKey(page.name.makeKey());</span><br><span class="line">&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">    logger.log(e.getMessage());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="不要使用标记位做为函数参数"><a href="#不要使用标记位做为函数参数" class="headerlink" title="不要使用标记位做为函数参数"></a>不要使用标记位做为函数参数</h2><p>标记位是告诉你的用户这个函数做了不只一件事情。 函数应该只做一件事情。 如果你的函数因为一个布尔值 出现不同的代码路径， 请拆分它们。</p>
+<p><strong>错误示例：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">createFile</span><span class="params">(String name,<span class="type">boolean</span> temp)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(temp)&#123;</span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">File</span>(<span class="string">&quot;./temp&quot;</span>+name);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">       <span class="keyword">new</span> <span class="title class_">File</span>(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>正确示例：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">createFile</span><span class="params">(String name)</span>&#123;</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">File</span>(name);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> <span class="title function_">createTempFile</span><span class="params">(String name)</span>&#123;</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">File</span>(<span class="string">&quot;./temp&quot;</span>+name);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h1><h2 id="不要返回Null值"><a href="#不要返回Null值" class="headerlink" title="不要返回Null值"></a>不要返回Null值</h2><p><strong>错误示例：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">registerItem</span><span class="params">(Item item)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (item != <span class="literal">null</span>) &#123;</span><br><span class="line">        <span class="type">ItemRegistry</span> <span class="variable">registry</span> <span class="operator">=</span> peristentStore.getItemRegistry();</span><br><span class="line">        <span class="keyword">if</span> (registry != <span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="type">Item</span> <span class="variable">existing</span> <span class="operator">=</span> registry.getItem(item.getID());</span><br><span class="line">            <span class="keyword">if</span> (existing.getBillingPeriod().hasRetailOwner()) &#123;</span><br><span class="line">                existing.register(item);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>返回 null值，基本上是在给自己增加工作量，也是在给调用者添乱。只要有一处没检查 nul1 值，应用程序就会失控。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">List&lt;Employee&gt; employees = getEmployees();</span><br><span class="line"><span class="keyword">if</span> (employees != <span class="literal">null</span>) &#123;</span><br><span class="line">    <span class="keyword">for</span>(Employee e : employees) &#123;</span><br><span class="line">        totalPay += e.getPay();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>正确示例：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">List&lt;Employee&gt; employees = getEmployees();</span><br><span class="line"><span class="keyword">for</span>(Employee e : employees) &#123;</span><br><span class="line">    totalPay += e.getPay();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> List&lt;Employee&gt; <span class="title function_">getEmployees</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="keyword">if</span>( .. there are no employees .. )</span><br><span class="line">    <span class="keyword">return</span> Collections.emptyList();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="不要传递Null值"><a href="#不要传递Null值" class="headerlink" title="不要传递Null值"></a>不要传递Null值</h2><p>在方法中返回 null 值是糟糕的做法，但将 null 值传递给其他方法就更糟糕了。除非 API要求你向它传递 null 值，否则就要尽可能避免传递 null 值。</p>
+<p><strong>错误示例：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MetricsCalculator</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">double</span> <span class="title function_">xProjection</span><span class="params">(Point p1, Point p2)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> (p2.x – p1.x) * <span class="number">1.5</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    …</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>正确示例：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">double</span> <span class="title function_">xProjection</span><span class="params">(<span class="meta">@NotNull</span> Point p1, <span class="meta">@NotNull</span> Point p2)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> (p2.x – p1.x) * <span class="number">1.5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>恰当的做法就是禁止传入 null 值。</p>
+
       
     </div>
 
