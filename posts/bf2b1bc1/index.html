@@ -319,49 +319,52 @@
     
     
 
-    <footer class="post-footer"><style>
-  .poem-container {
-    text-align: center;
-    margin-top: 50px;
-    border: 2px solid gray;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #f5f5f5;
-  }
-  .poem-content {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-  }
-  .poem-details {
-    font-size: 14px;
-    color: #666;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-</style>
+    <footer class="post-footer">
 
-<script src="//sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
-<script>
-  jinrishici.load((result) => {
-    let jrsc = document.getElementById('jrsc');
-    const data = result.data;
-    let author = data.origin.author;
-    let title = '《' + data.origin.title + '》';
-    let content = data.content.substr(0, data.content.length - 1);
-    let dynasty = data.origin.dynasty.substr(0, data.origin.dynasty.length - 1);
-    jrsc.innerText = content;
-    jrscDetails.innerText = dynasty + ' · ' + author + ' ' + title;
-    jrscDetails.style.display = 'inline-block';
-  });
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .poem-container {
+      text-align: center;
+      margin-top: 30px;
+      border: 2px solid gray;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #f5f5f5;
+    }
+    .poem-content {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .poem-details {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="poem-container">
+    <span class="poem-content" id="jrsc">正在加载今日诗词....</span>
+    <br>
+    <span class="poem-details" id="jrsc-details"></span>
+  </div>
 
-<div class="poem-container">
-  <span class="poem-content" id="jrsc">正在加载今日诗词....</span>
-  <br>
-  <span class="poem-details" id="jrscDetails"></span>
-</div>
+  <script src="//sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
+  <script>
+    jinrishici.load((result) => {
+      let jrsc = document.getElementById('jrsc');
+      let jrscDetails = document.getElementById('jrsc-details');
+      const data = result.data;
+      let author = data.origin.author;
+      let title = '《' + data.origin.title + '》';
+      let content = data.content.substr(0, data.content.length - 1);
+      let dynasty = data.origin.dynasty.substr(0, data.origin.dynasty.length - 1);
+      jrsc.innerText = content;
+      jrscDetails.innerText = dynasty + ' · ' + author + ' ' + title;
+    });
+  </script>
+</body>
+</html>
 
 
         
