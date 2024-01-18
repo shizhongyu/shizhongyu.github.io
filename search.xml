@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>API测试</title>
+    <url>/posts/873cc8b2/</url>
+    <content><![CDATA[<h1 id="9种API测试"><a href="#9种API测试" class="headerlink" title="9种API测试"></a>9种API测试</h1><span id="more"></span>
+
+<p><img src="/../images/c53f283e-6834-45b6-beb9-57b10b2a22fd_1280x1664.webp" alt="c53f283e-6834-45b6-beb9-57b10b2a22fd_1280x1664.webp"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>2024.01日记</title>
     <url>/posts/2916158c/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">
@@ -39,14 +47,6 @@
 <h1 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h1><ol>
 <li><a href="https://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html">理解OAuth 2.0</a></li>
 </ol>
-]]></content>
-  </entry>
-  <entry>
-    <title>API测试</title>
-    <url>/posts/873cc8b2/</url>
-    <content><![CDATA[<h1 id="9种API测试"><a href="#9种API测试" class="headerlink" title="9种API测试"></a>9种API测试</h1><span id="more"></span>
-
-<p><img src="/../images/c53f283e-6834-45b6-beb9-57b10b2a22fd_1280x1664.webp" alt="c53f283e-6834-45b6-beb9-57b10b2a22fd_1280x1664.webp"></p>
 ]]></content>
   </entry>
   <entry>
@@ -126,6 +126,18 @@
 <p><strong>正确示例：</strong></p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">List&lt;Integer&gt; programmerOutput = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">programmerOutput.add(<span class="number">500</span>);</span><br><span class="line">programmerOutput.add(<span class="number">1500</span>);</span><br><span class="line">programmerOutput.add(<span class="number">150</span>);</span><br><span class="line">programmerOutput.add(<span class="number">1000</span>);</span><br><span class="line"><span class="type">int</span> <span class="variable">totalOutput</span> <span class="operator">=</span> programmerOutput.stream()</span><br><span class="line">        .filter(programmer -&gt; programmer &gt; <span class="number">500</span>)</span><br><span class="line">        .mapToInt(programmer -&gt; programmer)</span><br><span class="line">        .sum();</span><br></pre></td></tr></table></figure>
 
+<h2 id="避免负面条件"><a href="#避免负面条件" class="headerlink" title="避免负面条件"></a>避免负面条件</h2><p><strong>错误示例：</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">isDOMNodeNotPresent</span><span class="params">(Node node)</span> &#123;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (!isDOMNodeNotPresent(node)) &#123;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>正确示例：</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">isDOMNodePresent</span><span class="params">(Node node)</span> &#123;</span><br><span class="line">            <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (isDOMNodePresent(node)) &#123;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用-getters-和-setters"><a href="#使用-getters-和-setters" class="headerlink" title="使用 getters 和 setters"></a>使用 getters 和 setters</h2><p><strong>错误示例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class BankAccount &#123;</span><br><span class="line">    public int balance=1000;</span><br><span class="line">&#125;</span><br><span class="line">BankAccount bankAccount=new BankAccount();</span><br><span class="line">bankAccount.balance-=100;</span><br></pre></td></tr></table></figure>
+
+<p><strong>正确示例：</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">BankAccount</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> blance=<span class="number">1000</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getBlance</span><span class="params">()</span> &#123;</span><br><span class="line">         <span class="keyword">return</span> blance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setBlance</span><span class="params">(<span class="type">int</span> blance)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span>(verifyIfAmountCanBeSetted(blance))&#123;</span><br><span class="line">                <span class="built_in">this</span>.blance = blance;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">void</span> <span class="title function_">verifyIfAmountCanBeSetted</span><span class="params">(<span class="type">int</span> amount)</span>&#123;</span><br><span class="line">            <span class="comment">//...</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    BankAccount bankAccount=<span class="keyword">new</span> <span class="title class_">BankAccount</span>();</span><br><span class="line">    bankAccount.setBlance(<span class="number">2000</span>);</span><br><span class="line">    <span class="type">int</span> balance=bankAccount.getBlance();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h1 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h1><h2 id="不要返回Null值"><a href="#不要返回Null值" class="headerlink" title="不要返回Null值"></a>不要返回Null值</h2><p><strong>错误示例：</strong></p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">registerItem</span><span class="params">(Item item)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (item != <span class="literal">null</span>) &#123;</span><br><span class="line">        <span class="type">ItemRegistry</span> <span class="variable">registry</span> <span class="operator">=</span> peristentStore.getItemRegistry();</span><br><span class="line">        <span class="keyword">if</span> (registry != <span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="type">Item</span> <span class="variable">existing</span> <span class="operator">=</span> registry.getItem(item.getID());</span><br><span class="line">            <span class="keyword">if</span> (existing.getBillingPeriod().hasRetailOwner()) &#123;</span><br><span class="line">                existing.register(item);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -144,6 +156,9 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">double</span> <span class="title function_">xProjection</span><span class="params">(<span class="meta">@NotNull</span> Point p1, <span class="meta">@NotNull</span> Point p2)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> (p2.x – p1.x) * <span class="number">1.5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>恰当的做法就是禁止传入 null 值。</p>
+<h1 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h1><ul>
+<li><a href="https://github.com/shizhongyu/clean-code-java">https://github.com/shizhongyu/clean-code-java</a></li>
+</ul>
 ]]></content>
   </entry>
   <entry>
@@ -217,6 +232,14 @@
       </tags>
   </entry>
   <entry>
+    <title>前端架构</title>
+    <url>/posts/926db354/</url>
+    <content><![CDATA[<h1 id="五种前端架构"><a href="#五种前端架构" class="headerlink" title="五种前端架构"></a>五种前端架构</h1><span id="more"></span>
+
+<p><img src="/../images/F_38UuNbEAACWtu.jpeg" alt="F_38UuNbEAACWtu.jpeg"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>网络</title>
     <url>/posts/50daec4/</url>
     <content><![CDATA[<h1 id="8-种常用网络协议"><a href="#8-种常用网络协议" class="headerlink" title="8 种常用网络协议"></a>8 种常用网络协议</h1><span id="more"></span>
@@ -231,14 +254,6 @@
 <li><a href="https://zhuanlan.zhihu.com/p/663267550">用一张动图解释 8 种常用网络协议</a></li>
 <li><a href="https://blog.bytebytego.com/p/ep80-explaining-8-popular-network">EP80: Explaining 8 Popular Network Protocols in 1 Diagram</a></li>
 </ol>
-]]></content>
-  </entry>
-  <entry>
-    <title>前端架构</title>
-    <url>/posts/926db354/</url>
-    <content><![CDATA[<h1 id="五种前端架构"><a href="#五种前端架构" class="headerlink" title="五种前端架构"></a>五种前端架构</h1><span id="more"></span>
-
-<p><img src="/../images/F_38UuNbEAACWtu.jpeg" alt="F_38UuNbEAACWtu.jpeg"></p>
 ]]></content>
   </entry>
 </search>
